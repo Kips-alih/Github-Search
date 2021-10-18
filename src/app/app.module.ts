@@ -14,6 +14,7 @@ import { AboutComponent } from './about/about.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { RepoDirective } from './directives/repo.directive';
+import { TimeCountPipe } from './time-count.pipe';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { RepoDirective } from './directives/repo.directive';
     AboutComponent,
     NavbarComponent,
     NotFoundComponent,
-    RepoDirective
+    RepoDirective,
+    TimeCountPipe
   ],
   imports: [
     BrowserModule,
