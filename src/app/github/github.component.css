@@ -7,3 +7,7 @@ h2{
   margin-top: 5px;
   margin-bottom: 5px;  
 }
+img[id="profile"]{
+  height: 100px;
+  width: 100px;
+}

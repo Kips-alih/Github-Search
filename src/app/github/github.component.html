@@ -4,7 +4,7 @@
   <div class="row">
     <div class="col-md-6">
       <div *ngIf='user.login'>
-          <img src="{{user.avatar_url}}" alt="profile-photo" ><br>
+          <img id="profile" src="{{user.avatar_url}}" alt="profile-photo" ><br>
           <h4>Account username is <strong><em>{{user.login}}</em></strong></h4><br>
           <p>This account has <strong>{{user.public_repos}}</strong> repositories and was created on <strong>{{user.created_at | date}}</strong>. </p>
           <button class="btn  btn-lg btn-success"><a href="{{user.html_url}}">Go to the account</a></button>
