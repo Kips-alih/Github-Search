@@ -11,3 +11,7 @@ img[id="profile"]{
   height: 100px;
   width: 100px;
 }
+a[id="account-url"]{
+  color: white;
+  text-decoration: none;
+}
