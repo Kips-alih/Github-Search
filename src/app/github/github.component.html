@@ -2,17 +2,20 @@
 <div class="container">
   <ng-progress></ng-progress>
   <div class="row">
-    <div class="col-md-6">
+   
+    <div class="col-md-12">
+      <app-form></app-form>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
       <div *ngIf='user.login'>
           <img id="profile" src="{{user.avatar_url}}" alt="profile-photo" ><br>
           <h4>Account username is <strong><em>{{user.login}}</em></strong></h4><br>
-          <p>This account has <strong>{{user.public_repos}}</strong> repositories and was created on <strong>{{user.created_at | date}}</strong>. </p>
+          <p>This account has <strong>{{user.public_repos}}</strong> public repositories and was created on <strong>{{user.created_at | date}}</strong>. </p>
           <button class="btn  btn-lg btn-success"><a id="account-url" href="{{user.html_url}}">Go to the account</a></button>
           <button class="btn  btn-lg btn-primary">Repositories</button>
       </div>
-    </div>
-    <div class="col-md-6">
-      <app-form></app-form>
     </div>
   </div>
   
@@ -20,7 +23,6 @@
 <div class="container-fluid">
   <div class="row">
     <div class="col-md-12">
-      <h2>These are the public repositories in this account.</h2>
       <div class="col-md-4 card" id="repoDetail" *ngFor='let repositoryDetail of repositoryDetails'>
         <h4 appRepo >Name: {{repositoryDetail.name}}</h4>
         <p>Description: {{repositoryDetail.description}}</p>
